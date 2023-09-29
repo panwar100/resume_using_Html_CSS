@@ -1,0 +1,51 @@
+body, h1, h2, h3, h4, p  {
+    margin: 0 ;
+    padding: 0;
+    margin-bottom: 5px;
+}
+.container
+        {
+            display: flex;
+            flex-direction: row; /* Default to a row layout */
+            
+        }
+.container1 
+        {  
+            width: 30% auto;
+            min-height: 100vh; /*Set the desired height of container */
+            background-color: rgb(7, 116, 242); /* Set background colour of container */
+        }
+.circular-image 
+        {
+            width: 140px; 
+            height: 140px;
+            border-radius: 50%; /* Create a circular clipping effect */
+            object-fit: cover; /* Ensure the image covers the circular area */
+            border: 2px solid #333; /* Optional border for the circular image */
+            margin-inline-start: 20%;
+        }
+.center
+        {
+            text-align: center;
+        }
+
+
+ul      { 
+           text-align: justify;
+        }
+              
+.cointainer2 
+        {
+            width: 70% auto;
+            min-height: 100%;
+            
+        } 
+.date 
+        { 
+            font-size: small; /* set font size of text */
+
+        }
+  
+        
+        
+        
