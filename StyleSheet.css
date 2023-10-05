@@ -1,51 +1,65 @@
-body, h1, h2, h3, h4, p  {
-    margin: 0 ;
-    padding: 0;
-    margin-bottom: 5px;
-}
-.container
-        {
-            display: flex;
-            flex-direction: row; /* Default to a row layout */
-            
+/* Common styles for headings and paragraphs */
+h1, h2, h3, h4, p {
+        margin: 5%;
+        padding: 0;
+    }
+    
+    /* Base styles for container */
+    .container {
+        margin-left:22%;
+        margin-right: 50%;
+        border: 2px solid #000000;
+        margin: 0 auto;
+        line-height: 90%;
+        max-width: 56%;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    /* Container for content on the left */
+    .container1 {
+        font-size: 15px;
+        background-color: rgb(7, 116, 242);
+        padding: 10px; /* Add some padding for spacing */
+        width: 30%; /* Set the width to 30% */
+    }
+    
+    /* Circular image */
+    .circular-image {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 2px solid #333;
+        margin: 20px auto; /* Center the image horizontally */
+        display: block;
+    }
+    
+    /* Center-aligned text */
+    .center {
+        text-align: center;
+    }
+    
+    /* Container for the right content */
+    .container2 {
+        font-size: 15px;
+        padding: 10px; /* Add some padding for spacing */
+        width: 70%; /* Set the width to 70% */
+    }
+    
+    /* Date styling */
+    .date {
+        font-size: small;
+    }
+    
+    /* Responsive Media Query for smaller screens */
+    @media (max-width: 768px) {
+        .container {
+            flex-direction: column; /* Stack elements vertically */
         }
-.container1 
-        {  
-            width: 30% auto;
-            min-height: 100vh; /*Set the desired height of container */
-            background-color: rgb(7, 116, 242); /* Set background colour of container */
+    
+        .container1,
+        .container2 {
+            width: 96%; /* Take up full width on smaller screens */
         }
-.circular-image 
-        {
-            width: 140px; 
-            height: 140px;
-            border-radius: 50%; /* Create a circular clipping effect */
-            object-fit: cover; /* Ensure the image covers the circular area */
-            border: 2px solid #333; /* Optional border for the circular image */
-            margin-inline-start: 20%;
-        }
-.center
-        {
-            text-align: center;
-        }
-
-
-ul      { 
-           text-align: justify;
-        }
-              
-.cointainer2 
-        {
-            width: 70% auto;
-            min-height: 100%;
-            
-        } 
-.date 
-        { 
-            font-size: small; /* set font size of text */
-
-        }
-  
-        
-        
-        
+    }
